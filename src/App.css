@@ -14,8 +14,15 @@
 }
 .myHeading{
   font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold !important;
+  color: black;
+}
+.description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

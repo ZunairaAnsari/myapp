@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Button } from 'react-bootstrap';
 import logo1 from './asset/camera-icon.png'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -18,8 +19,8 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/home">Home</Nav.Link>
-                            <Nav.Link href="/about">About</Nav.Link>
+                            <Link to={"/"} >Home</Link>
+                            <Link to={"/about"} >About Us</Link>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -34,7 +35,7 @@ const Header = () => {
                                     <Form.Control type="text" placeholder="Search" className="mr-sm-2" />
                                 </Col>
                                 <Col xs="auto">
-                                    <Button className="custom-button">Login</Button>
+                                    <Link to={"/signup-page"} ><Button className="custom-button">Sign Up</Button></Link>
                                 </Col>
                             </Row>
                         </Form>
