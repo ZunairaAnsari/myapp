@@ -1,30 +1,17 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Image1 from './asset/heroSectionImages/1.jpg.jpg'
+import Image1 from './asset/heroSectionImages/1.jpg.jpg';
+import Image2 from './asset/heroSectionImages/architecture.jpg';
+import Image3 from './asset/heroSectionImages/spring.jpg';
+import { Stack } from 'react-bootstrap';
 
 export default function HeroSection() {
   return (
     <div>
-      <Container>
-        <Row>
-          <Col> <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={Image1}/>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-          </Col>
-        </Row>
-      </Container>
+      <Stack direction="horizontal" gap={1}>
+      <div className="p-2"><img src={Image1} width={'600px'} height={'450px'} alt='1' /></div>
+      <div className="p-2 ms-auto"><img src={Image2} width={'300px'} height={'450px'} alt='architecture' /></div>
+      <div className="p-2"><img src={Image3} width={'300px'} height={'450px'} alt='spring'/></div>
+    </Stack>
     </div>
   );
 }
