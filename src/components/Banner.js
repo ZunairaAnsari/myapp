@@ -24,15 +24,22 @@ export default function Banner() {
     justifyContent: 'center',
     alignItems: 'center',
     color: '#ffffff',
-    fontSize: '2rem'
-  };
+    fontSize: '2rem',
+  };  
 
   return (
     <div style={bannerContainerStyle}>
       <img src={banner} alt='banner' style={bannerImageStyle} />
       <div style={overlayStyle}>
-        <h1>Photography Website</h1>
-      </div>
+    <div style={{ textAlign: 'center' }}>
+      <h1 style={{ fontFamily: 'Utopia Std, serif' }}>Capturing Life Through the Lens</h1>
+      <p style={{ fontFamily: 'Utopia Std, serif' }}>
+        Life unfolds its myriad hues with every passing moment, and I am here to capture
+         those stories through the lens of my camera. Each photo tells a unique tale,
+          each frame holding a piece of life's intricate tapestry.
+          </p>
+    </div>
+  </div>
     </div>
   );
 }

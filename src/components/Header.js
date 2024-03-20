@@ -18,22 +18,15 @@ const Header = () => {
     };
 
     return (
-        <div className='header'>
             <Navbar expand="lg" className="bg-body-tertiary navbar-transparent fixed-top">
                 <Container>
-                    <Navbar.Brand href="#home"><img src={logo1} alt='logo' width={50} height={50} /></Navbar.Brand>
+                    <Navbar.Brand href="/"><img src={logo1} alt='logo' width={50} height={50} /></Navbar.Brand>
+                    <Navbar.Brand href="/"><h5 style={{ fontFamily: 'cursive', marginTop: '2px'}}>Photography</h5></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Link to={"/"} style={linkStyle}>Home</Link>
                             <Link to={"/about"} style={linkStyle}>About Us</Link>
-                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1" style={linkStyle}>Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2" style={linkStyle}>Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3" style={linkStyle}>Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4" style={linkStyle}>Separated link</NavDropdown.Item>
-                            </NavDropdown>
                         </Nav>
                         <Form inline>
                             <Row className="align-items-center">
@@ -48,7 +41,6 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
     )
 }
 
