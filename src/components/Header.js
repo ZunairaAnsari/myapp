@@ -14,6 +14,7 @@ const Header = () => {
     const linkStyle = {
         textDecoration: 'none',
         color: 'black',
+        fontFamily: 'Utopia',
         padding: '0.5em 0.5em 0.5em 0.5em'
     };
 
@@ -21,7 +22,7 @@ const Header = () => {
             <Navbar expand="lg" className="bg-body-tertiary navbar-transparent fixed-top">
                 <Container>
                     <Navbar.Brand href="/"><img src={logo1} alt='logo' width={50} height={50} /></Navbar.Brand>
-                    <Navbar.Brand href="/"><h5 style={{ fontFamily: 'cursive', marginTop: '2px'}}>Photography</h5></Navbar.Brand>
+                    <Navbar.Brand href="/"><h5 style={{ fontFamily: 'Utopia', marginTop: '2px'}}>Photography</h5></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
