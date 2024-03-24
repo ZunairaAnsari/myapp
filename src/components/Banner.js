@@ -26,6 +26,10 @@ export default function Banner() {
     fontSize: '1.5rem',
   };
 
+  function handleClick(){
+    window.location.href = '/HeroSection';
+  }
+
   return (
     <div style={bannerContainerStyle}>
       <div>
@@ -37,7 +41,7 @@ export default function Banner() {
           each frame holding a piece of life's intricate tapestry.
         </p>
         </Container>
-        <Button variant='dark' className='banner-btn'>Explore More </Button>
+        <Button variant='dark' className='banner-btn' onClick={handleClick}>Explore More</Button>
       </div>
     </div>
   );

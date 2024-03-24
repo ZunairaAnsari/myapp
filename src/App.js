@@ -3,6 +3,7 @@ import './App.css';
 import HeroSection from './components/HeroSection';
 import Home from './components/Home';
 import SignUpPage from './components/SignUpPage';
+import Nature from './components/navigationPages/Nature';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
     <Route path='/' element={ <Home /> } />
     <Route path='/about' element={ <HeroSection /> } />
     <Route path='/signup-page' element={ <SignUpPage />} />
-    <Route />
+    <Route path='/nature' element={ <Nature />}/>
     </Routes>
     </BrowserRouter>
    </>

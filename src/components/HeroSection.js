@@ -8,7 +8,7 @@ import linked from './asset/heroSectionImages/linked.jpg';
 
 export default function HeroSection({ history }) {
   const navigateToPage = (page) => {
-    history.push(page);
+    window.location.href = "/nature";
   };
 
   const imageStyle = {
@@ -21,7 +21,7 @@ export default function HeroSection({ history }) {
         <div className="p-2" style={{ position: 'relative' }}>
           <img src={Image1} style={imageStyle} width={'600px'} height={'450px'} alt='1' />
           <button 
-            onClick={() => navigateToPage('/page1')}
+            onClick={() => navigateToPage('/nature')}
             className="button">
            <h3>Nature</h3>
           </button>
