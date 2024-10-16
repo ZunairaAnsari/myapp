@@ -45,3 +45,14 @@
   border: none !important;
 }
 
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form{
+  width: 700px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
